@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: cursive;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul a:hover{
+            color: lightpink;
+        }
+        main hr{
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+            background: #9c97f1;
+        }
+        .left{
+            font-size: 1.5 rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0;
+        }
+        .firstsection >div{
+            width: 30%;
+        }
+        .leftsection{
+            
+            font-size: 3rem;
+          
+        }
+        .rightsection img{
+            width: 80%;
+          
+        }
+        #element{
+            color: purple;
+        }
+        .secondsection{
+            margin:auto;
+            max-width: 80vw;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .text-grey{
+            color: gray;
+        }
+        .secondsection .box{
+            background-color: white;
+            width: 204vh;
+            height: 2px;
+            margin: 56px 0px;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+        .img-top{
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-tittle{
+            width: 150px;
+            position: relative;
+            top: 75px;
+        }
+        .vertical-desc{
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+        footer{
+            background-color: rgb(17, 13, 17);
+            height: 233px;
+            
+        }
+        .leftsection .btn{
+            padding: 12px;
+            background-color: darkblue;
+            color:white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        footer ul{
+            list-style: none;
+        }
+        .footer{
+            display: flex;
+            padding: 28px 11px;
+            justify-content:space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Apoorva's Portfoplio</div>
+            <div class="right">
+                <ul>
+                    <a href="/"><li>Home</li></a>
+                    <a href="/"><li>About</li></a>
+                    <a href="/"><li>contact</li></a>
+                    <a href="/"><li>Projects</li></a>
+                    <a href="/"><li>Services</li></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is Apoorva
+                <div>And i am a</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit GitHUb</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="dev1.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What i have done so far</span>
+           <h1> Work Experience</h1>
+           <div class="box">
+            <div class="vertical">
+                <img class="img-top" src="work - Copy.png" alt="">
+                <div class="vertical-tittle">
+                    HTML Dev
+                </div>
+                <div class="vertical-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur exercitationem perspiciatis ab ut commodi, labore error similique obcaecati soluta praesentium est, non consectetur, aspernatur veniam architecto saepe illum corrupti doloribus?
+                </div>
+            </div>
+            <div class="vertical">jjj</div>
+            <div class="vertical">jj</div>
+            <div class="vertical">jj</div>
+           </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="first">
+                <h3>heheheeh</h3>
+            </div>
+            <div class="second">
+                <ul>
+                    <li>home</li>
+                    <li>home</li>
+                    <li>about</li>
+                </ul>
+            </div>
+            <div class="third"></div>
+            <div class="fourth"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Dev', '&amp; Student.'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
